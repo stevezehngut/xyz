@@ -36,12 +36,15 @@ body {
 	margin: 20px 0;
 }
 
-.entry-title {
+.entry-title,
+.page-title {
 	font-family: 'Domine', serif;
 	font-size: 2em;
+	color: #333;
 }
 
-.entry-title a {
+.entry-title a,
+.page-title a {
 	color: #333;
 }
 

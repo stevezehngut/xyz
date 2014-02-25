@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<section id="primary" class="medium-9 columns content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -17,11 +17,22 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
+
+			<div class="row">
+
 			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php
+				// Add a row break every 2 posts
+				if ( (($count % 2) == 0) && ($count > 0) ) echo '</div><!-- .row --><div class="row">';
+				$count++;
+				?>
 
 				<?php get_template_part( 'content', 'search' ); ?>
 
 			<?php endwhile; ?>
+
+			</div><!-- .row -->
 
 			<?php xyz_paging_nav(); ?>
 
