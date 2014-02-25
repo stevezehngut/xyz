@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
+/* font-family: 'Open Sans', sans-serif;   */
+
+@import url(http://fonts.googleapis.com/css?family=Domine:700);
+/* font-family: 'Domine', serif; */
+
+
+/*
+#masthead {
+	background: #7EB0EA;
+}
+
+#primary {
+	background: #F5C98C;
+}
+
+#secondary {
+	background: #B2E78B;
+}
+
+#colophon {
+	background: #F2B0B4;
+}
+*/
+
+
+/* GENERAL */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+}
+
+#primary,
+#secondary { 
+	margin: 20px 0;
+}
+
+.entry-title {
+	font-family: 'Domine', serif;
+	font-size: 2em;
+}
+
+.entry-title a {
+	color: #333;
+}
+
+/* HEADER */
+
+.site-branding {
+	background: #ccc;
+}
+
+.site-title {
+	font-family: 'Domine', serif;
+	font-size: 4.5em;
+	line-height: 1;
+	margin: 10px 0 0;
+}
+
+.site-title a {
+	color: #333;
+}
+
+.site-description {
+	font-size: 1.2em;
+}
+
+/* FOOTER */
+
+#colophon .row {
+	background: #ccc;
+	padding: 10px 0;
+}
+
+/* SIDEBAR */
+
+.widget {
+}
+
+.widget-title {
+	font-weight: 700;
+	font-size: 1.2em;
+	border-bottom: 1px solid #999;
+}
